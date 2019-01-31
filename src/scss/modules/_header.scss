@@ -1,0 +1,22 @@
+header {
+    position: relative;
+}
+
+.clearfix {
+
+    &:After,
+    &:before {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+//pc
+@include pc() {
+    
+}
+
+@include lg() {
+    
+}

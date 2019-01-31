@@ -1,0 +1,23 @@
+header
+    section#menu
+        .navbar.sticky-header.fixed.clearfix
+            //- a.logo-sp.show-sp(href=""): img(src="img/logo-header.png" alt="alt_text")
+            //- <!--mobi button-->
+            button.nav-toggle
+                .icon-menu
+                    span.line.line-1
+                    span.line.line-2
+                    span.line.line-3
+            //- <!--/mobi button-->
+            nav.nav-container
+                ul
+                    li: a.go-to(href="#security") サービスの特徴
+                    li: a.go-to(href="#research") 導入事例
+                    li: a.go-to(href="#procedure") 開始までの流れ
+                    li: a.go-to(href="#question") よくある質問
+                    li: a.go-to(href="#contact") お問い合わせ
+                a.backlink(href="http://aoiyakk.com/")
+                    span.name AOIYA
+                    span.desc COPORATE SITE
+        
+        .js-after-fixed

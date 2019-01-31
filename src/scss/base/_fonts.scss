@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+@include roboto('400,700');
+
+body {
+    font-family:'Hiragino Kaku Gothic Pro', YuGothic, 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+    color: #333333;
+    //font-size: 13px;
+    //line-height: 1.6;
+    //background: #f4f8fa;
+    // background: url(../img/body-bg.png);
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     color: #333;
+//     font-size: 1em;
+//     line-height: 1.4;
+//     margin-top: 0;
+
+    
+// }

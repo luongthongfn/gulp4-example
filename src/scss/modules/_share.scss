@@ -1,0 +1,150 @@
+body{
+    max-width: 1920px;
+    margin: auto;
+}
+%title {
+    font-family: 'Hiragino Kaku Gothic Pro', YuMincho, 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'HG明朝E', 'ＭＳ Ｐ明朝', 'ＭＳ 明朝', serif;
+    text-align: center;
+    // white-space: nowrap;
+    color: #fff;
+    background: #0080C9;
+    font-size: vwSP(34);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: vwSP(9px) vwSP(0px) vwSP(10px);
+    margin-bottom: vwSP(40px);
+    border-radius: 100px;
+}
+
+%subtitle {
+    color: #002040;
+    font-size: vwSP(24);
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    margin-top: vwSP(10px);
+}
+
+.title {
+    @extend %title;
+}
+
+.subtitle {
+    @extend %subtitle;
+}
+
+.container {
+    @extend %wrapper1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+%wrapper1 {
+    width: vwSP(690px);
+}
+
+%wrapper2 {
+    width: vwSP(635px);
+}
+
+.readmore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: vwSP(46px);
+    color: #23a393;
+    background: #fff;
+    font-weight: bold;
+    padding: vwSP(17px) vwSP(10px) vwSP(18px) vwSP(27px);
+    margin: auto;
+    border: 3px solid #23a393;
+    box-shadow: 0 3px 6px transparentize(#000, .84);
+
+    .icon {
+        background: url(../img/i-file.png) no-repeat;
+        background-size: 100%;
+        flex: 0 0 auto;
+        width: vwSP(58px);
+        height: vwSP(70px);
+        margin-right: vwSP(33px);
+    }
+
+    .txt {
+        line-height: vwSP(53px);
+    }
+}
+
+/*
+*        pc
+*/
+@include pc() {
+    .title {
+        font-size: vwPC(30px);
+        max-width: 800px;
+        padding: vwPC(7px) 0 vwPC(8px);
+        margin: auto;
+    }  
+
+    %wrapper1 {
+        width: vwPC(1280px);
+    }
+
+    %wrapper2 {
+        width: vwPC(1002px);
+    }
+
+    .readmore {
+        font-size: vwPC(32px);
+        text-align: center;
+        max-width: vwPC(800px);
+        padding: vwPC(17px) vwPC(10px) vwPC(18px) vwPC(27px);
+        
+        .icon {
+            width: vwPC(30px);
+            height: vwPC(36px);
+            margin-right: vwPC(33px);
+        }
+    
+        .txt {
+            line-height: vwPC(53px);
+        }
+    }
+}
+
+/*
+*        lg
+*/
+@include lg() {
+    .title {
+        font-size: (30px);
+        max-width: 800px;
+        padding: (7px) 0 (8px);
+        margin: auto;
+    }  
+
+    %wrapper1 {
+        width: (1280px);
+    }
+
+    %wrapper2 {
+        width: (1002px);
+    }
+
+    .readmore {
+        font-size: (32px);
+        text-align: center;
+        max-width: 800px;
+        padding: (17px) (10px) (18px) (27px);
+        
+        .icon {
+            width: (30px);
+            height: (36px);
+            margin-right: (33px);
+        }
+    
+        .txt {
+            line-height: (53px);
+        }
+    }
+}

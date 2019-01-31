@@ -1,0 +1,285 @@
+#go-top {
+    font-size: vwPC(145);
+    // display: inline-block;
+    display: none;
+    z-index: 9;
+    color: #fff;
+    width: vwPC(180px);
+    height: vwPC(180px);
+    line-height: vwSP(30px);
+    text-align: center;
+    background: #93BAE1;
+    background-size: 300% auto;
+    position: fixed;
+    bottom: vwPC(107px);
+    right: vwPC(220px);
+    cursor: pointer;
+    border-radius: 0;
+    border: 2px solid transparent;
+}
+
+footer {
+    position: relative;
+    text-align: center;
+
+    #go-top {
+        position: absolute;
+        z-index: 0;
+        bottom: 100%;
+    }
+}
+
+.ft-top {
+    background: #4C8CCE;
+    padding: vwSP(45px) 0 vwSP(36px);
+    .ft-logo{
+        img{
+            width: vwSP(517px);
+        }
+    }
+}
+
+.ft-mid {
+    background: #0E5A8F;
+}
+
+.ft-menu {
+    padding: vwSP(35px) 0;
+
+    li {
+        a {
+            display: block;
+            font-size: vwSP(30);
+            font-weight: bold;
+            color: #fff;
+            padding: vwSP(28px) 0;
+
+            &:hover {
+                color: #d8d8d8;
+            }
+        }
+
+        .go-top {
+            width: unset;
+            height: unset;
+            right: unset;
+        }
+    }
+}
+
+
+.ft-bot {
+    background: #4C8CCE;
+    padding-top: vwSP(40px);
+
+    .ft-info {
+        font-family: 'YuGothic', '游ゴシック', YuGothic, 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+        color: #fff;
+        font-size: vwSP(18px);
+
+        img {
+            width: vwSP(248px);
+            margin-bottom: vwSP(10px);
+        }
+    }
+}
+
+.copy-r {
+    font-size: vwSP(20);
+    color: #fff;
+    text-align: center;
+    padding-bottom: vwSP(43px);
+    margin-top: vwSP(49px);
+
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: #ccc;
+        }
+    }
+}
+
+@include pc() {
+
+    #go-top,
+    .go-top {
+        display: block;
+        font-size: vwPC(50px);
+        width: vwPC(60px);
+        height: vwPC(60px);
+        top: vwPC(20px);
+        right: vwPC(21px);
+        border: 2px solid #fff;
+        background: transparent url(../img/i-arrow-up.png) center no-repeat;
+        background-size: 50%;
+        .fa{
+            display: none;
+        }
+    }
+
+    .ft-top {
+        padding: vwPC(44px) 0 vwPC(25px);
+        .ft-logo {
+            img {
+                width: vwPC(183px);
+            }
+        }
+    }
+
+    .ft-mid {
+        background: #4C8CCE;
+    }
+
+    .ft-menu {
+        padding: vwPC(0px) 0  vwPC(15px);
+
+        li {
+            display: inline-block;
+
+            a {
+                display: block;
+                font-size: vwPC(14px);
+                font-weight: bold;
+                color: #fff;
+                padding: vwPC(10px) vwPC(10px);
+
+                &:hover {
+                    color: #d8d8d8;
+                }
+            }
+
+            .go-top {
+                width: unset;
+                height: unset;
+                right: unset;
+            }
+        }
+    }
+
+
+    .ft-bot {
+        background: #4C8CCE;
+        padding-top: vwSP(0px);
+        
+
+        .ft-info {
+            display: inline-block;
+            min-width: vwPC(254px);
+            font-size: vwPC(18px);
+            color: #333;
+            background: #fff;
+            padding: vwPC(5px) vwPC(15px);
+            margin-bottom: vwPC(10px);
+            img {
+                width: vwPC(113px);
+                vertical-align: middle;
+                margin-bottom: vwPC(10px);
+            }
+            p{
+                display: inline-block;
+                font-size: vwPC(11px);
+            }
+        }
+    }
+
+    .copy-r {
+        background: 0;
+        font-size: vwPC(12px);
+        padding: vwPC(35px) 0;
+        margin-top: auto;
+        margin-bottom: vwPC(0px);
+    }
+}
+
+@include lg() {
+
+    #go-top,
+    .go-top {
+        display: block;
+        font-size: (50px);
+        width: (60px);
+        height: (60px);
+        top: 20px;
+        right: 21px;
+        border: 2px solid #fff;
+        background: transparent url(../img/i-arrow-up.png) center no-repeat;
+        .fa{
+            display: none;
+        }
+    }
+
+    .ft-top {
+        padding: 44px 0 25px;
+        .ft-logo {
+            img {
+                width: 183px;
+            }
+        }
+    }
+
+    .ft-mid {
+        background: #4C8CCE;
+    }
+
+    .ft-menu {
+        padding: (0px) 0  15px;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: block;
+                font-size: (14px);
+                font-weight: bold;
+                color: #fff;
+                padding: (5px) (10px);
+
+                &:hover {
+                    color: #d8d8d8;
+                }
+            }
+
+            .go-top {
+                width: unset;
+                height: unset;
+                right: unset;
+            }
+        }
+    }
+
+
+    .ft-bot {
+        background: #4C8CCE;
+        padding-top: (0px);
+        
+
+        .ft-info {
+            display: inline-block;
+            min-width: 254px;
+            font-size: (18px);
+            color: #333;
+            background: #fff;
+            padding: 5px 15px;
+            margin-bottom: 10px;
+            img {
+                width: (113px);
+                vertical-align: middle;
+                margin-bottom: 10px;
+            }
+            p{
+                display: inline-block;
+                font-size: 11px;
+            }
+        }
+    }
+
+    .copy-r {
+        background: 0;
+        font-size: (12px);
+        padding: 35px 0;
+        margin-top: auto;
+        margin-bottom: (0px);
+    }
+}

@@ -1,0 +1,377 @@
+extend ../layouts/_layout1.pug
+block variables 
+    - var title ='home'
+    //- - var mode ='dev'
+    - var mode =''
+block content
+    
+    #content
+
+        section.banner
+            .banner-top
+                img(src="img/info1-sp.png", alt="info1")
+                p 葵屋株式会社は株式会社エイブルパーキングの<br class="show-sp">アライアンスパートナーです
+            .banner--bg
+                .container
+                    .banner--intro
+                        img(src="img/banner-logo-sp.png", alt="logo")
+                        .banner--intro--text
+                            |駐車場経営なら<br class="show-sp">葵屋にお任せ下さい<br>あなたにもできる<br class="show-sp">堅実の駐車場投資！
+                    .banner--benefit
+                        .banner--benefit--item
+                            .step.dp-top-left
+                                span メリット
+                                span.num 01
+                            .banner--benefit--item--txt
+                                h3 自販機売上もお客様へ還元！
+                                p 毎月の売上から電気代を差引いた全額がお客様の報酬となります。コインパーキングと両輪による報酬プランを実現いたします。
+
+                        .banner--benefit--item
+                            .step.dp-top-left
+                                span メリット
+                                span.num 02
+                            .banner--benefit--item--txt
+                                h3 工期短縮、早期マネタイズを実現！
+                                p 円滑な施工スケジュールから、工事着工1週間後の早期稼働を実現いたします(ロケーションにより差異あります) 。
+
+                        .banner--benefit--item
+                            .step.dp-top-left
+                                span メリット
+                                span.num 03
+                            .banner--benefit--item--txt
+                                h3 フリーレント期間なし！
+                                p 通常、稼働初月は周知期間としてフリーレントとなるプランが多いですが、葵屋でご成約頂いたお客様は初月からのお支払いが可能です。
+
+
+                    a.readmore.go-to(href="#contact") 
+                        span.icon
+                        span.txt
+                            |メールでのお問い合わせ・
+                            |資料請求はこちら           
+
+        section.concern#concern
+            .concern--bg
+                .container
+                    h2.title 土地活用でこんなお悩みはありませんか？
+                    .concern--list
+                        label 
+                            input(type="checkbox" checked disabled)
+                            span.checkbox
+                            |日々の管理が煩わしい
+                        label
+                            input(type="checkbox" checked disabled)
+                            span.checkbox
+                            |初期費用が高い
+                        label
+                            input(type="checkbox" checked disabled)
+                            span.checkbox
+                            |大きな土地を持っていない
+                        label
+                            input(type="checkbox" checked disabled)
+                            span.checkbox
+                            |安定した収入が得られるか不安
+                    .concern--sign
+                        .concern--sign--circle    
+                            span.sign-top 
+                                |１つでも当てはまる <br/>
+                                |ものがあれば
+                            span.sign-bottom
+                                |有効活用の <br/>
+                                |チャンスです！
+            .container
+                a.readmore.go-to(href="#contact")
+                    span.icon
+                    span.txt
+                        |メールでのお問い合わせ・
+                        |資料請求はこちら
+
+        section.security#security
+            .container
+                h2.title 安心と信頼の３つの特徴
+                .row
+                    .column
+                        img.show-sp(src="img/secur1-sp.png", alt="security")
+                        img.show-pc(src="img/secur1-pc.png", alt="security")
+                        .column--content
+                            h3.column--title
+                                |同一担当者による<br/>ワンストップサポート 
+                                
+                            p.column--txt
+                                |ご契約前のプレゼンに始まり、契約・導入後のサポートや各種お問い合わせに至るまで、お客様のご状況に精通した担当者が対応させて頂きます。
+                    .column
+                        img.show-sp(src="img/secur2-sp.png", alt="security")
+                        img.show-pc(src="img/secur2-pc.png", alt="security")
+                        .column--content
+                            h3.column--title
+                                |一括借り上げ方式による<br/>安定収入
+                                
+                            p.column--txt
+                                |ロケーション調査を実施し、毎月のお支払い賃料をお客様との合意の下、一括借り上げのご契約を締結させて頂きます。月々報酬が上下するといった波もなく、安定した収入を可能にしております。
+                    .column
+                        img.show-sp(src="img/secur3-sp.png", alt="security")
+                        img.show-pc(src="img/secur3-pc.png", alt="security")
+                        .column--content
+                            h3.column--title
+                                |工事施工<br/>運営費は無料
+                                
+                            p.column--txt
+                                |工事・機器の設置など、設備投資におけるお客様負担ゼロを実現しておりますので、ノーリスクからの土地活用をお約束できます(※アスファルト舗装費用は除きます)。
+                a.readmore.go-to(href="#contact")
+                    span.icon
+                    span.txt
+                        |メールでのお問い合わせ・
+                        |資料請求はこちら   
+
+        section.research#research
+            .container
+                h2.title 導入事例
+                .case-container
+                    -
+                        var arr = [
+                            {
+                                case: 1,
+                                title: '月極駐車場とコインパーキングの併用',
+                                imgBefore:'img/casebf1.png',
+                                imgAfter:'img/caseaf1.png',
+                                before: '14台駐車可能な月極駐車場を運営。5台分の空きスペースがありました。',
+                                after:'5台分の空きスペースを纏めてコインパーキングに転用したことで空車が埋まり月額報酬の向上を実現しました。'
+                            },
+                            {
+                                case: 2,
+                                title: '更地を舗装、コインパーキングへの転用',
+                                imgBefore:'img/casebf2.png',
+                                imgAfter:'img/caseaf2.png',
+                                before: '長年にわたり未使用だった更地を、建物建築含め有効な土地活用方法を検討し、将来の相続 対策も考えコインパーキング運営を決定。 ',
+                                after:'アスファルト舗装の後、コインパーキングをオープン。カメラ監視システムを導入し、夜間点灯する証明も設置したことで、地域住民に安心と明るさの提供を実現しました。 '
+                            },
+                            {
+                                case: 3,
+                                title: '古い家屋を解体、コインパーイングへの転用',
+                                imgBefore:'img/casebf3.png',
+                                imgAfter:'img/caseaf3.png',
+                                before: '古くなった建物を解体し、当初は空き地として管理',
+                                after:'コインパーキングとして土地活用を開始。自動車を駐車できない空きスペースはバイクの月極駐輪場を設置しました。 '
+                            },
+                            {
+                                case: 4,
+                                title: '変更地をコインパーキングへ',
+                                imgBefore:'img/casebf4.png',
+                                imgAfter:'img/caseaf4.png',
+                                before: '月極3台分全てが空いたため、コインパーキングとしての運用を決定',
+                                after:'お客様にてアスファルト舗装のご対応の後、一括借り上げ契約を締結。施工工事を経てコインパーキングをオープンしました。 '
+                            },
+                            {
+                                case: 5,
+                                title: 'ロック板→ロックレスシステムの導入',
+                                imgBefore:'img/casebf5.png',
+                                imgAfter:'img/caseaf5.png',
+                                before: 'ロック版式のコインパーキングを運営。年数を経て機会も古くなり、精算を完了してもロック版が下がらないなど経年によるトラブルが増える。 ',
+                                after:'最新のロックレスサービスを導入したことで出庫に関するトラブルはゼロに。監視カメラシステムを導入したことで不正駐車などのトラブル防止に絶大な効果を発揮しています。 '
+                            }
+                        ];
+                    -
+                    - for (var i = 0; i < 5; ++i) {
+                        .research--case
+                            h3.research--case--title 
+                                span.num CASE.0#{i+1}
+                                span.txt #{arr[i].title}
+                            .slider-case.owl-carousel
+                                .research--case--before
+                                    img(src=arr[i].imgBefore, alt="case1")
+                                    .case-content
+                                        .badget Before
+                                        p #{arr[i].before}
+                                .research--case--after
+                                    img(src=arr[i].imgAfter, alt="case1")
+                                    .case-content
+                                        .badget After
+                                        p #{arr[i].after}
+                    - }                    
+                a.readmore.go-to(href="#contact")
+                    span.icon
+                    span.txt
+                        |メールでのお問い合わせ・
+                        |資料請求はこちら            
+
+        section.procedure#procedure
+            .container
+                h2.title 開始までの流れ
+                .procedure--container
+                    .procedure--item
+                        img(src="img/i-proced1.png", alt="procedure")
+                        .procedure--item--content
+                            h3.procedure--title 受付
+                            p 土地活用に関連する様々なお悩み、問題をお気軽にお問い合わせください。
+                    .procedure--item
+                        img(src="img/i-proced2.png", alt="procedure")
+                        .procedure--item--content
+                            h3.procedure--title 調査<br class="show-sp"/><span class="show-pc">・</span>訪問
+                            p 周辺のロケーション調査を事前に実施、対象となる土地のメリットある有効な活用方法をご紹介させて頂きます。
+
+                    .procedure--item
+                        img(src="img/i-proced3.png", alt="procedure")
+                        .procedure--item--content
+                            h3.procedure--title 契約
+                            p 条件等、お客様のご納得の頂ける内容にてご締結させて頂きます。
+                    .procedure--item
+                        img(src="img/i-proced4.png", alt="procedure")
+                        .procedure--item--content
+                            h3.procedure--title 着工<br class="show-sp"/><span class="show-pc">・</span>完成
+                            p お客様への施工費用のご負担はゼロを実現(アルファルト舗装費用は除きます)。完成に至るまで全ての施工を速やかに完了させます。
+
+                    .procedure--item
+                        img(src="img/i-proced5.png", alt="procedure")
+                        .procedure--item--content
+                            h3.procedure--title 運営<br class="show-sp"/><span class="show-pc">・</span>管理
+                            p 周辺地域への周知・販促活動や24時間365日の運営管理を責任を持って対応します。
+                p.procedure--note エイブルパーキングと葵屋が<br class="show"/>オーナー様のお悩みに<br class="show-sp"/>即時に対応、解決致します！
+
+                a.readmore.go-to(href="#contact")
+                    span.icon
+                    span.txt
+                        |メールでのお問い合わせ・
+                        |資料請求はこちら    
+
+        section.question#question
+            .container
+                h2.title よくある質問
+                ul.quest-list.collapse-container
+                    li.quest-item.collapse
+                        h3.quest-title 
+                            img(src="img/i-quest.png", alt="question")
+                            span 契約期間について教えてもらえますか？
+                        p.quest-answer.collapse-item ３年間の契約が基本となりますが、諸条件によりご希望ございましたらお気軽にご相談ください。
+
+                    li.quest-item.collapse
+                        h3.quest-title 
+                            img(src="img/i-quest.png", alt="question")
+                            span 運営中の月極駐車場の空車スペースだけコインパーキングに転用したいのですが？
+                        p.quest-answer.collapse-item 月極とコインパーキングの併用は可能です。
+
+                    li.quest-item.collapse
+                        h3.quest-title 
+                            img(src="img/i-quest.png", alt="question")
+                            span 更地からコインパーキングを始めるのに費用が気になるのですが・・。
+                        p.quest-answer.collapse-item アスファルト未舗装の場合、舗装費用のみご負担頂きます。その他、機器設置、運営、管理に関連する費用ご負担はありませんのでご安心ください。
+
+                    li.quest-item.collapse
+                        h3.quest-title 
+                            img(src="img/i-quest.png", alt="question")
+                            span 機械故障や利用者トラブルが起きた場合、どのように対応すればいいですか？
+                        p.quest-answer.collapse-item お客様の直接によるご対応は一切ございません。ご契約を締結後は24時間365日コールセンターを含めて運営・管理、トラブル対応は全て専門スタッフが行います。
+
+                a.readmore.go-to(href="#contact")
+                    span.icon
+                    span.txt
+                        |メールでのお問い合わせ・
+                        |資料請求はこちら  
+
+        section.contact#contact
+            .container
+                h2.title お問い合わせ
+
+                .form-container
+                    p.contact-desc 必要事項をご入力のうえ、送信ボタンを押してください。
+
+                    .flr.form-require ※は入力必須項目です
+                    .clb
+
+
+            form.contact--form#contact--form(action="" method="POST")
+                .step-container
+                    .container.form-container
+                        table.contact-table
+                            tr
+                                td: span 会社名
+                                td: input#company(type="text" name="company")   
+                            tr
+                                td: span お問い合わせ項目 <span class="flr">※</span>
+                                td
+                                    label 
+                                        input#company.custom-radio-real(type="radio" name="request" value="資料請求")
+                                        span.custom-radio
+                                        |資料請求
+                                    span.space-nbsp4 &nbsp;&nbsp;&nbsp;&nbsp;
+                                    label
+                                        input#company.custom-radio-real(type="radio" name="request" value="その他")
+                                        span.custom-radio
+                                        |その他
+                            tr
+                                td: span お名前 <span class="flr">※</span>
+                                td: input#name(type="text" name="name")            
+                            tr
+                                td: span 郵便番号
+                                td.td-zipcode
+                                    input#zipcode(type="tel" name="zipcode")
+                                    button.get-zipcode(type="button") 郵便番号で住所検索
+                            tr
+                                td: span ご住所
+                                td: textarea#address(name="address" rows="3")
+                            tr
+                                td: span 電話番号(ハイフン無し)<span class="flr">※</span>
+                                td: input#phone(type="tel" name="phone")
+                            tr
+                                td: span FAX番号(ハイフン無し)
+                                td: input#fax(type="tel" name="fax")
+                            tr
+                                td: span メールアドレス<span class="flr">※</span>
+                                td: input#email(type="email" name="email")
+                            tr
+                                td: span メールアドレス<br class="show-pc"/>（確認用)<span class="flr">※</span>
+                                td: input#re_email(type="email" name="re_email")
+                            tr
+                                td: span お問い合わせ内容<span class="flr">※</span>
+                                td: textarea#question_input(name="question" cols="30" rows="5")
+                            tr
+                                td.td-submit(colspan=2)
+                                    p.before-submit
+                                        |入力内容をご確認の上、<br class="show-sp"/>宜しければ送信ボタンを押してください。
+                                    button.contact-submit#contact-submit(type="submit") 
+                                        img(src="img/i-send.png", alt="isend")
+                                        |送信<i class="fa"></i>
+                        .step-overlay
+                            
+                                .step2
+                                    table.table-preview
+                                        tr.hidden
+                                            td: span 会社名
+                                            td: span#preview_company ahsdlajsld jalsjdlkasjdlasd
+                                        tr.hidden
+                                            td: span お問い合わせ項目<span class="flr">※</span> 
+                                            td: span#preview_request ahsdlajsld jalsjdlkasjdlasd
+                                        tr.hidden
+                                            td: span お名前<span class="flr">※</span> 
+                                            td: span#preview_name ahsdlajsld jalsjdlkasjdlasd
+                                        tr.hidden
+                                            td: span 郵便番号
+                                            td: span#preview_zipcode ahsdlajsld jalsjdlkasjdlasd
+                                        tr.hidden
+                                            td: span ご住所
+                                            td: span#preview_address ahsdlajsld jalsjdlkasjdlasd
+                                        tr.hidden
+                                            td: span 電話番号<span class="flr">※</span>
+                                            td: span#preview_phone ahsdlajsld jalsjdlkasjdlasd
+                                        tr.hidden
+                                            td: span FAX番号
+                                            td: span#preview_fax ahsdlajsld jalsjdlkasjdlasd
+                                        tr.hidden
+                                            td: span メールアドレス<span class="flr">※</span>
+                                            td: span#preview_email ahsdlajsld jalsjdlkasjdlasd
+                                        tr.hidden
+                                            td: span お問い合わせ内容<span class="flr">※</span>
+                                            td: span#preview_question ahsdlajsld jalsjdlkasjdlasd
+                                    .button-wrapper
+                                        p.confirm-title 上記内容で送信しますか？
+                                        button.back.form-back(type='button') キャンセル
+                                        button.next.form-submit(type='button')
+                                            img(src="img/i-send.png", alt="isend")
+                                            |送信<i class="fa"></i>
+
+                                .step3
+                                    p.contact-complete-title お問い合わせありがとうございました
+                                    p.contact-complete-message
+                                        |後ほど担当者よりご連絡を差し上げますので<br>しばらくお待ちください
+
+                                    button.form-end(type='button')
+                                        span トップページへ戻る
+                                        <i class="fa fa-angle-right flr"></i>
