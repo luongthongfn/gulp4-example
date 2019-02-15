@@ -1,11 +1,4 @@
-let {
-    src,
-    dest,
-    parallel,
-    series,
-    task,
-    watch
-} = require('gulp'),
+let { src, dest, parallel, series, task, watch } = require('gulp'),
 
     log = require('gulplog'),
 
@@ -22,6 +15,7 @@ let {
     gulpPug = require('gulp-pug'),
 
     globby = require('globby'),
+    uglify = require('gulp-uglify'),
     through = require('through2'),
     source = require('vinyl-source-stream'),
     buffer = require('vinyl-buffer'),
@@ -105,9 +99,9 @@ function script() {
             loadMaps: true
         }))
         // Add gulp plugins to the pipeline here.
-        // .pipe(uglify({
-        //     // drop_console: true 
-        // })).on('error', log.error)
+        .pipe(uglify({
+            // drop_console: true 
+        })).on('error', log.error)
         .pipe(sourcemaps.write(mapsFolder))
         .pipe(dest(path.js.dest))
         .pipe(browserSync.reload({

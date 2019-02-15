@@ -38,7 +38,6 @@ $(function () {
             slideInit();
         } else{
             owl.owlCarousel('destroy');
-            console.log('dstroy')
         }
     }, 200))
 });

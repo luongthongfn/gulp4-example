@@ -25,6 +25,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sass-bulk-import": "^1.0.1",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
     "gulplog": "^1.0.0",
     "japan-postal-code": "^0.2.0",
     "owl.carousel2": "^2.2.1",
